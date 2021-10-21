@@ -16,14 +16,14 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "RZ-DJ"  # (translatable)
-BLOG_TITLE = "Saving Data Journalism"  # (translatable)
+BLOG_AUTHOR = "PDW"  # (translatable)
+BLOG_TITLE = "Preserving the Dynamic Web"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://savingjournalism.reprozip.org/"
+SITE_URL = "https://web.reprozip.org/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-BASE_URL = "https://savingjournalism.reprozip.org/"
+BASE_URL = "https://web.reprozip.org/"
 BLOG_EMAIL = "pdw-group@nyu.edu"
 BLOG_DESCRIPTION = "A site detailing our work to save data journalism apps."  # (translatable)
 
