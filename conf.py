@@ -846,7 +846,7 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contact: <a href="mailto:{email}">{author}</a> | <a href="/about/">About our effort</a> | Website source <a href="https://gitlab.com/vickysteeves/savingjournalism-site">gitlab.com/vickysteeves/savingjournalism-site</a>'
+CONTENT_FOOTER = 'Contact: <a href="mailto:{email}">{author}</a> | <a href="/about/">About our effort</a> | Website source <a href="https://github.com/reprozip-news-apps/website">github.com/reprozip-news-apps/website</a>'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
