@@ -24,7 +24,7 @@ SITE_URL = "https://savingjournalism.reprozip.org/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 BASE_URL = "https://savingjournalism.reprozip.org/"
-BLOG_EMAIL = "rz-dj@nyu.edu"
+BLOG_EMAIL = "pdw-group@nyu.edu"
 BLOG_DESCRIPTION = "A site detailing our work to save data journalism apps."  # (translatable)
 
 # What is the default language?
