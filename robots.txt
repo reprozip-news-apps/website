@@ -1,0 +1,4 @@
+Sitemap: https://web.reprozip.org/sitemapindex.xml
+
+User-Agent: *
+Host: web.reprozip.org

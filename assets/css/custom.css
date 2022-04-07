@@ -1,0 +1,109 @@
+body p {
+  font-size:1.1em;
+  color:#323232 !important;
+}
+
+body ul > li {
+	font-size:1.1em;
+	color:#323232 !important;
+}
+
+body ol > li {
+	font-size:1.1em;
+	color:#323232 !important;
+}
+
+body a {
+	color: #00aedb;
+}
+
+body a:hover {
+	color: #f37735;
+}
+
+
+/* --------------------BUTTONS--------------------------*/
+
+.bg-primary { 
+	background-color: #00aedb !important;
+}
+
+.btn-primary {
+	background-color: #00aedb !important;
+	color: #fff !important;
+}
+
+.btn-primary:hover {
+	background-color: #008baf !important;
+	color: #fff !important;
+}
+
+.border-primary {
+	border-color: #00aedb !important;
+}
+
+
+/* --------------------NAVBAR--------------------------*/
+
+.navbar { 
+	font-size: 1.1em;
+	background-color: #00aedb !important;
+}
+
+.navbar-brand a {
+	font-size: 1.1em;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
+	font-weight:bold;
+}
+
+#blog-title{
+	vertical-align: -moz-middle-with-baseline !important;
+	padding-left: 0.2em;
+}
+
+.dropdown-item { 
+	font-size: 1.1em;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #f37735;
+}
+
+/* --------------------FOOTER--------------------------*/
+#footer {
+  text-align: center;
+  font-size:1em;
+  margin-bottom:2em;
+}
+
+/* --------------------RESPONSIVE DISPLAY HEADINGS--------------------------*/
+@media (max-width: 575.98px) {
+    .display-1 {
+	font-size: 3rem;
+	font-weight: 300;
+	line-height: 1.0;
+    }
+
+    .display-2 {
+        font-size: 2.75rem;
+        font-weight: 300;
+        line-height: 1.0;
+    }
+
+    .display-3 {
+        font-size: 2.25rem;
+        font-weight: 300;
+        line-height: 1.0;
+    }
+
+    .display-4 {
+        font-size: 1.75rem;
+        font-weight: 300;
+        line-height: 1.0;
+    }
+
+}
