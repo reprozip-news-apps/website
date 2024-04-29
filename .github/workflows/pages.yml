@@ -1,27 +1,36 @@
 name: Pages
 
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - trunk
 
 jobs:
   deploy:
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: https://web.reprozip.org/
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-python@v1
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
       with:
-        python-version: "3.9"
+        python-version: "3.10"
     - name: Install Nikola
       run: |
         pip install webassets
-        pip install -U --upgrade-strategy=eager Nikola==8.0.0b2
+        pip install -U 'Nikola>=8,<9'
     - name: Build site
       run: nikola build
-    - uses: peaceiris/actions-gh-pages@v3
+    - name: Setup pages
+      uses: actions/configure-pages@v3
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
-        force_orphan: true
-        cname: web.reprozip.org
-      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        path: public
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
