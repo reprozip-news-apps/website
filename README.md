@@ -15,7 +15,7 @@ $ virtualenv -p python3 venv
 $ source venv/bin/activate
 </pre></code>
 
-Now, you can get started and install all of the dependecies of this site in its own environment:
+Now, you can get started and install all of the dependencies of this site in its own environment:
 
 <pre><code># install the dependencies
 $ pip install Nikola['extras']

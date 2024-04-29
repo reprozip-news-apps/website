@@ -1,7 +1,7 @@
 <!--
 .. title:
 .. slug: index
-.. date: 2022-04-07 12:33:05 UTC-04:00
+.. date: 2024-04-29 12:33:05 UTC-04:00
 .. hidetitle: True
 .. description: 
 .. type: text
@@ -11,13 +11,28 @@
 <html lang="en">
   <body>
   
-    <div class="jumbotron">
-		<h1 class="display-4">Preserving the Dynamic Web</h1>
-		<p class="lead">An IMLS funded project to build a production-ready tool that enables systematic collection & preservation of dynamic websites.</p>
-<!--	<hr class="my-4">
-		<p>Some more explanation.</p>-->
-		<p class="lead"><a class="btn btn-primary btn-lg" href="/about/" role="button">Learn more</a></p>
-	</div>
-  
+	<h1 class="display-4">Preserving the Dynamic Web</h1>
+	<p class="lead">An IMLS funded project to build a production-ready tool that enables systematic collection & preservation of dynamic websites.</p>
+
+	<h1>Our approach</h1>
+
+	<p>We knit together open source tools to help you archive dynamic web apps across technologies and domains!!</p>
+
+	<img src="/images/workflow.png" alt="Our workflow described in text below" class="mb-1"/>
+
+	<p class="h4">1. Make an initial capture of your app with <a href="https://reprozip.org">ReproZip</a></p>
+	<p>Using ReproZip, you can capture all the server-side assets in your web app.</p>
+
+	<p class="h4">2. Upload the RPZ bundle to <a href="https://server.reprozip.org">ReproServer</a></p>
+	<p>ReproServer is where we do the front-end asset archiving, because it can take a long time depending on the app!</p>
+
+	<p class="h4">3. Click the "web capture" button & follow the wizard!</p>
+	<p>You can choose automatic or manual web capture.</p>
+
+	<p class="h4">4. Download the resulting RPZ bundle, which contains a WACZ!</p>
+	<p>You can then replay it within ReproServer, and then deposit the RPZ into a repository!</p>
+
+	<div class="d-grid gap-2 d-md-flex justify-content-md-end"><a class="btn btn-outline-info btn-lg mb-2" href="/about/" role="button">Learn more >></a></div>
+
 	</body>
 </html>
