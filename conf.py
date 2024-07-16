@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "PDW"  # (translatable)
-BLOG_TITLE = "Preserving the Dynamic Web"  # (translatable)
+BLOG_TITLE = "ReproZip-Web"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://web.reprozip.org/"
@@ -57,8 +57,9 @@ DEFAULT_LANG = "en"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+    ('/', 'Home'),
     ('/about/', 'About the Project'),
-    ('https://github.com/reprozip-news-apps', 'GitHub Organization ↗'),
+    # ('https://github.com/reprozip-news-apps', 'GitHub Organization ↗'),
     )
 }
 
@@ -74,7 +75,7 @@ THEME = "custom"
 
 # Primary color of your theme. This will be used to customize your theme.
 # Must be a HEX value.
-THEME_COLOR = '#5670d4'
+THEME_COLOR = '#57068c'
 
 # Theme configuration. Fully theme-dependent. (translatable)
 # Examples below are for bootblog4.
@@ -255,11 +256,11 @@ COMPILERS = {
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
 # The URL may be relative to the site root.
-LOGO_URL = '/images/logo.png'
+# LOGO_URL = '/images/logo.png'
 
 # If you want to hide the title of your website (for example, if your logo
 # already contains the text), set this to False.
-SHOW_BLOG_TITLE = False
+SHOW_BLOG_TITLE = True
 
 # Writes tag cloud data in form of tag_cloud_data.json.
 WRITE_TAG_CLOUD = True
@@ -842,7 +843,7 @@ src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = '<a href="mailto:{email}">Email us</a> | <a href="/about/">About our effort</a> | <a href="https://github.com/reprozip-news-apps/website">Website source</a>'
+CONTENT_FOOTER = '<a href="mailto:{email}">Email us</a> | <a href="/about/">About the project</a> | <a href="https://github.com/reprozip-news-apps/">GitHub organization</a> | <a href="https://github.com/reprozip-news-apps/website">Website source</a>'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will

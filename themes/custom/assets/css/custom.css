@@ -1,7 +1,16 @@
 body p {
   font-size:1.1em;
-  color:#323232 !important;
+  color: rgba(0,0,0,0.70) !important;
+  font-weight: 300 !important;
 }
+
+body p.intro {
+    font-size:1.3em;
+    letter-spacing: 0px;
+    color: rgba(0,0,0,0.70) !important;
+
+  }
+  
 
 body ul > li {
 	font-size:1.1em;
@@ -14,14 +23,139 @@ body ol > li {
 }
 
 body a {
-	color: #00aedb;
+	color: #57068C;
 }
 
 body a:hover {
 	color: #f37735;
 }
 
+body {
+    background-color: #F8F1EE;
+}
 
+/* --------------------CARD--------------------------*/
+
+.custom-card {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    border-radius: 13px;
+    margin: 0.75em 0em;
+}
+
+.custom-card-content svg {
+    width: 86px !important;
+    flex: none;
+}
+.custom-card-content {
+    padding: 2em;
+    display: flex;
+
+}
+
+.custom-card-step {
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.custom-card-step p {
+    margin-bottom: 3px;
+    font-weight: 400 !important;
+    letter-spacing: 0px !important;
+}
+
+/* --------------------CSS ACCORDION--------------------------*/
+
+.custom-card-css-expander input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.custom-card-css-expander input:checked ~ .custom-card-content-expanded {
+    max-height: 100rem;
+}
+
+.custom-card-content-expanded {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 40px;
+    transition: all 0.35s;
+    border-top: 1px solid #efefef;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.custom-card-clicker {
+    text-align: center;
+    width: 100%;
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding-top: 0.5em;
+    color: rgba(0,0,0,0.8);
+    text-transform: uppercase;
+}
+
+.custom-card-clicker::after {
+    content: '+ Show details';
+}
+
+.custom-card-css-expander input:checked ~ .custom-card-clicker::after{
+    content: '- Hide details';
+}
+
+/* --------------------TEXT STYLES--------------------------*/
+
+.headline {
+    text-transform: none !important;
+    font-size: 2.75em;
+    letter-spacing: -1px !important;
+    font-weight: 500;
+}
+
+@media (min-width: 750px) {
+    .headline {
+        font-size: 3.5em;
+    }
+}
+
+
+
+.subhead {
+    text-transform: none !important;
+    font-size: 1.5em;
+    letter-spacing: 0px !important;
+    font-weight: 500;   
+}
+
+.step-headline {
+    text-transform: none !important;
+    font-size: 1.2em;
+    letter-spacing: 0px !important;
+    font-weight: 500;  
+    margin-bottom: 2px; 
+}
+
+/* --------------------MISC OVERRIDES--------------------------*/
+
+/* Narrower container for legibility of long text */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 960px !important;
+    }
+}
+
+/* Font smoothing */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
 /* --------------------BUTTONS--------------------------*/
 
 .bg-primary { 
@@ -46,12 +180,18 @@ body a:hover {
 /* --------------------NAVBAR--------------------------*/
 
 .navbar { 
-	font-size: 1.1em;
-	background-color: #00aedb !important;
+	font-size: 0.9em;
+	background-color: #57068C !important;
+    padding: 0.75rem 1rem !important;
 }
 
 .navbar-brand a {
 	font-size: 1.1em;
+}
+
+.navbar-nav.mr-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
 }
 
 .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
@@ -78,6 +218,14 @@ body a:hover {
   text-align: center;
   font-size:1em;
   margin-bottom:2em;
+  margin-top:3em;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+td {
+    font-weight: 400;
+  letter-spacing: 0px;  
 }
 
 /* --------------------RESPONSIVE DISPLAY HEADINGS--------------------------*/
